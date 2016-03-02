@@ -55,7 +55,7 @@ public class JokeAsyncTask extends AsyncTask<Void, Void, String>{
                     new AndroidJsonFactory(), null)
                     // options for running against local devappserver
                     // - turn off compression when running against local devappserver
-                    .setRootUrl("https://joke-1238.appspot.com/_ah/api/")
+                    .setRootUrl("http://10.0.2.2/_ah/api/")
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
                         public void initialize(AbstractGoogleClientRequest<?> abstractGoogleClientRequest) throws IOException {
